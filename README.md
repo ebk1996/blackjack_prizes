@@ -36,3 +36,43 @@ npm run dev
 - Prize modal pauses app via an overlay and only closes after successful submit or cancel.
 - Confetti is powered by `canvas-confetti`.
 - Never collect bank details directly. If you must handle payouts, integrate a payment/payout provider so sensitive data is handled by them.
+
+Step 1 — Make the game’s toy box (the database)
+Imagine we have a special toy box called Postgres where all the game’s scores and prizes are kept safe.
+We tell the toy box:
+
+“Hey, make me a new box called blackjack_prize.”
+
+“Now, fill it with the right shelves and drawers” (that’s what schema.sql does).
+
+Step 2 — Wake up the helper robot (the server)
+The robot runs the game’s brain.
+
+Go to the robot’s house (the server folder).
+
+Copy the robot’s “instructions” file and give it the real address of the toy box (that’s .env).
+
+Give the robot its tools (npm install).
+
+Tell it to start working (npm run dev).
+Now the robot listens for players on port 8787.
+
+Step 3 — Give the player a window to see the game (the client)
+The window shows the cards and prizes.
+
+Go to the client folder.
+
+Give it its own tools (npm install).
+
+Turn the lights on (npm run dev).
+
+Open the magic address it shows you — now you can see and play!
+
+Extra notes (like “rules of the playground”)
+
+When someone wins, a little prize window pops up and confetti flies.
+
+No touching money directly — for real prizes, let a trusted grown-up (like Stripe or a gift-card company) handle it.
+
+The robot understands a message like:
+“POST /api/entries with {name, email, etc.}” to save a winner.
