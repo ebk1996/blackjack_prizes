@@ -1,6 +1,6 @@
 # Blackjack Prize (SAFE) — client + server
 
-<img width="1536" height="1024" alt="ChatGPT Image Aug 14, 2025, 02_35_36 AM" src="https://github.com/user-attachments/assets/0c4ff575-b028-4540-b21e-a85d317a970c" />
+<img width="536" height="524" alt="ChatGPT Image Aug 14, 2025, 02_35_36 AM" src="https://github.com/user-attachments/assets/0c4ff575-b028-4540-b21e-a85d317a970c" />
 
 
 This demo **does not** collect bank info. For payouts, use a vetted third‑party like Stripe Connect or a gift‑card provider.
